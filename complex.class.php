@@ -9,28 +9,28 @@ class Complex {
 	}
 
 	function sum(Complex $x){
-    $this->re += $x->re;
-    $this->im += $x->im;
+    		$this->re += $x->re;
+    		$this->im += $x->im;
 	}
 
-  function sub(Complex $x){
-    $this->re -= $x->re;
-    $this->im -= $x->im;
-  }
+  	function sub(Complex $x){
+    		$this->re -= $x->re;
+    		$this->im -= $x->im;
+  	}
 
-  function multi(Complex $x){
-    $this->re *= $x->re;
-    $this->im *= $x->im;
-  }
+  	function multi(Complex $x){
+    		$this->re *= $x->re;
+    		$this->im *= $x->im;
+  	}
 
-  function div(Complex $x){
-    $this->re /= $x->re;
-    $this->im /= $x->im;
-  }
+  	function div(Complex $x){
+    		$this->re /= $x->re;
+    		$this->im /= $x->im;
+  	}
 
 	function __toString(){
 	  return "a=$this->re; bi=$this->im";
-  }
+  	}
 }
 
 $a = new Complex(10, 20);
